@@ -243,6 +243,8 @@ public class HurlStack extends BaseHttpStack {
                 break;
             case Method.DELETE:
                 connection.setRequestMethod("DELETE");
+                // Needs to add body in Delete Sometimes
+                addBodyIfExists(connection, request);
                 break;
             case Method.POST:
                 connection.setRequestMethod("POST");
