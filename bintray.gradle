@@ -38,7 +38,7 @@ artifacts {
 publishing {
     publications {
         library(MavenPublication) {
-            groupId 'com.android.volley'
+            groupId 'com.github.kdheerajc004.volley'
             artifactId 'volley'
             version project.version
             pom {
